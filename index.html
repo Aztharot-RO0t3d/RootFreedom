@@ -1,100 +1,109 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aztharot - Servicios y Clases en Ciberseguridad</title>
-    <!-- Tailwind CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <!-- Iconos de Font Awesome para redes sociales -->
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-    <!-- Estilos personalizados -->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RootFreedom - Tecnología y Libertad</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-black text-[#33ff33] font-mono">
-
-    <!-- Navbar -->
-    <nav class="flex items-center justify-between p-6 bg-gray-900 text-indigo-500">
-        <div class="text-2xl font-bold">Aztharot</div>
-        <ul class="flex space-x-6">
-            <li><a href="#services" class="hover:text-[#33ff33]">Servicios</a></li>
-            <li><a href="#projects" class="hover:text-[#33ff33]">Proyectos</a></li>
-            <li><a href="#contact" class="hover:text-[#33ff33]">Contacto</a></li>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <img src="logo.png" alt="RootFreedom Logo">
+        <span>RootFreedom</span>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#proyectos">Proyectos</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contacto">Contacto</a></li>
         </ul>
-    </nav>
+      </nav>
+    </div>
+  </header>
 
-    <!-- Título con efecto de máquina de escribir -->
-    <header class="flex flex-col items-center justify-center min-h-screen text-center">
-        <h1 id="title" class="text-5xl md:text-6xl font-extrabold text-indigo-500"></h1>
-        <p class="text-lg md:text-xl text-gray-300 mt-4 max-w-lg mx-auto">
-            Explora mis servicios y cursos sobre ciberseguridad, análisis de sistemas y programación.
-        </p>
-        <a href="#contact" class="mt-8 inline-block px-8 py-4 border-2 border-[#33ff33] text-[#33ff33] hover:bg-[#33ff33] hover:text-black transition duration-300 transform hover:scale-105 rounded-md text-lg md:text-xl">
-            Contáctame
-        </a>
-    </header>
+  <!-- Hero Section -->
+  <section id="inicio" class="hero">
+    <div class="container">
+      <h1>Hackea el sistema. Defiende tu libertad.</h1>
+      <p>En RootFreedom, creamos herramientas y conocimientos para un futuro digital descentralizado y autónomo.</p>
+      <div class="cta-buttons">
+        <a href="#servicios" class="btn">Explora nuestros servicios</a>
+        <a href="#contacto" class="btn">Únete a la revolución</a>
+      </div>
+    </div>
+  </section>
 
-    <!-- Sección de Servicios -->
-    <section id="services" class="bg-[#0d0d0d] text-white py-20">
-        <div class="container mx-auto text-center px-8">
-            <h2 class="text-4xl md:text-5xl font-bold text-indigo-500 mb-12">Servicios</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="p-6 border border-indigo-500 rounded-lg transition duration-300 transform hover:scale-105">
-                    <h3 class="text-2xl font-bold mb-2">Clases de Ciberseguridad</h3>
-                    <p class="text-gray-300">Conceptos básicos y avanzados en hacking ético y análisis de vulnerabilidades.</p>
-                </div>
-                <div class="p-6 border border-indigo-500 rounded-lg transition duration-300 transform hover:scale-105">
-                    <h3 class="text-2xl font-bold mb-2">Programación en Python</h3>
-                    <p class="text-gray-300">Programación para automatización y análisis de datos.</p>
-                </div>
-                <div class="p-6 border border-indigo-500 rounded-lg transition duration-300 transform hover:scale-105">
-                    <h3 class="text-2xl font-bold mb-2">Forense Digital</h3>
-                    <p class="text-gray-300">Identificación de huellas y rastreo de ataques en sistemas.</p>
-                </div>
-            </div>
+  <!-- Sección Servicios -->
+  <section id="servicios" class="services">
+    <div class="container">
+      <h2>Nuestros Servicios</h2>
+      <div class="service-grid">
+        <div class="service-item">
+          <h3>Ciberseguridad</h3>
+          <p>Protección de datos y privacidad digital.</p>
         </div>
-    </section>
-
-    <!-- Carrusel de Proyectos -->
-    <section id="projects" class="bg-black py-20 text-center text-gray-300">
-        <h2 class="text-4xl md:text-5xl font-bold text-indigo-500 mb-8">Proyectos</h2>
-        <div class="carousel">
-            <div class="carousel-item">
-                <h3 class="text-2xl font-bold">Proyecto 1</h3>
-                <p class="text-gray-400">Descripción del proyecto sobre análisis de vulnerabilidades.</p>
-            </div>
-            <div class="carousel-item">
-                <h3 class="text-2xl font-bold">Proyecto 2</h3>
-                <p class="text-gray-400">Implementación de un sistema de detección de intrusos.</p>
-            </div>
-            <div class="carousel-item">
-                <h3 class="text-2xl font-bold">Proyecto 3</h3>
-                <p class="text-gray-400">Automatización en análisis forense digital.</p>
-            </div>
+        <div class="service-item">
+          <h3>Hacking Ético</h3>
+          <p>Pruebas de penetración y auditorías de seguridad.</p>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-gray-400 py-10">
-        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-8">
-            <div>
-                <h3 class="text-lg font-bold text-indigo-500">Políticas de Privacidad</h3>
-                <p>Consulta nuestras políticas de privacidad y términos de servicio.</p>
-            </div>
-            <div>
-                <h3 class="text-lg font-bold text-indigo-500">Marca</h3>
-                <p>© 2023 Aztharot. Todos los derechos reservados.</p>
-            </div>
-            <div class="flex space-x-4 justify-center">
-                <a href="#" class="text-indigo-500 hover:text-[#33ff33]"><i class="fab fa-discord"></i></a>
-                <a href="#" class="text-indigo-500 hover:text-[#33ff33]"><i class="fab fa-youtube"></i></a>
-                <a href="#" class="text-indigo-500 hover:text-[#33ff33]"><i class="fab fa-github"></i></a>
-                <a href="#" class="text-indigo-500 hover:text-[#33ff33]"><i class="fab fa-facebook"></i></a>
-            </div>
+        <div class="service-item">
+          <h3>Programación</h3>
+          <p>Desarrollo de software libre y herramientas descentralizadas.</p>
         </div>
-    </footer>
+        <div class="service-item">
+          <h3>Formación</h3>
+          <p>Cursos y talleres sobre tecnología, hacking y ciberseguridad.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- JavaScript -->
-    <script src="script.js"></script>
+  <!-- Sección Proyectos -->
+  <section id="proyectos" class="projects">
+    <div class="container">
+      <h2>Proyectos en Marcha</h2>
+      <div class="project-grid">
+        <div class="project-item">
+          <h3>RedMesh</h3>
+          <p>Una red descentralizada para comunicaciones seguras.</p>
+        </div>
+        <div class="project-item">
+          <h3>CypherLock</h3>
+          <p>Herramienta de cifrado de código abierto.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección Contacto -->
+  <section id="contacto" class="contact">
+    <div class="container">
+      <h2>Únete a la Revolución</h2>
+      <form id="contact-form">
+        <input type="text" id="name" placeholder="Tu nombre" required>
+        <input type="email" id="email" placeholder="Tu correo electrónico" required>
+        <textarea id="message" placeholder="Tu mensaje" required></textarea>
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2023 RootFreedom. Todos los derechos liberados.</p>
+      <ul>
+        <li><a href="#">Política de Privacidad</a></li>
+        <li><a href="#">Términos de Uso</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
 </body>
 </html>
